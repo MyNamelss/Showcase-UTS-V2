@@ -1,12 +1,14 @@
 package main
 
 import (
-    "log"
-    "os"
-	"santrikoding/backend-api/config"
-	"santrikoding/backend-api/database"
+  "fmt"
+  "log"
+  "net/http"
+  "os"
+  "santrikoding/backend-api/config"
+  "santrikoding/backend-api/database"
 
-	"github.com/gin-gonic/gin"
+  "github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -30,5 +32,5 @@ func main() {
 	})
 
 	//mulai server
-	router.Run(":" + config.GetEnv("APP_PORT", "3001"))
+	router.Run(":" + config.GetEnv("APP_PORT", "3000"))
 }
