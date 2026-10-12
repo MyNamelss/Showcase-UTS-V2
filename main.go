@@ -1,9 +1,7 @@
 package main
 
 import (
-  "fmt"
   "log"
-  "net/http"
   "os"
   "santrikoding/backend-api/config"
   "santrikoding/backend-api/database"
