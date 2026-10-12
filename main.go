@@ -1,6 +1,8 @@
 package main
 
 import (
+    "log"
+    "os"
 	"santrikoding/backend-api/config"
 	"santrikoding/backend-api/database"
 
